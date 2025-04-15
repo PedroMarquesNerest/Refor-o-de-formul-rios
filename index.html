@@ -1,0 +1,167 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validando formulario com js</title>
+    <script src="validador.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <body>
+    <div class="topo">SNEAKERSS WRLD SC</div>
+    
+    <form id="maquinistaform">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+    
+    <label for="cpf">CPF:</label>
+    <input type="text" id="cpf" name="cpf" required>
+    
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade" name="idade" required>
+    
+    <label for="cidade">Cidade:</label>
+    <input type="text" id="cidade" name="cidade" required>
+    
+    <label for="bairro">Bairro:</label>
+    <input type="text" id="bairro" name="bairro" required>
+    
+    <label for="cep">CEP:</label>
+    <input type="text" id="cep" name="cep" required>
+    
+    <label for="experiencia">Anos de Experiência:</label>
+    <input type="number" id="experiencia" name="experiencia" required>
+    
+    <label for="escolha">Qual campo você deseja se integrar?</label>
+    <select id="escolha" name="escolha">
+    <option value="">Selecione...</option>
+    <option value="vendas">Vendas</option>
+    <option value="caixa">Caixa</option>
+    <option value="almoxarifado">Almoxarifado</option>
+    </select>
+    
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" />
+
+    <label for="telefone">Telefone:</label>
+    <input type="text" id="telefone" name="telefone" />
+
+    <label for="disponibilidade">Disponibilidade de horário:</label>
+    <input type="text" id="disponibilidade" name="disponibilidade" />
+
+    <label for="vendasExperiencia">Já trabalhou com vendas?</label>
+    <select id="vendasExperiencia" name="vendasExperiencia">
+    <option value="">Selecione</option>
+    <option value="sim">Sim</option>
+    <option value="nao">Não</option>
+    </select>
+
+    <label for="estoqueExperiencia">Já trabalhou com estoque?</label>
+    <select id="estoqueExperiencia" name="estoqueExperiencia">
+    <option value="">Selecione</option>
+    <option value="sim">Sim</option>
+    <option value="nao">Não</option>
+    </select>
+
+    <label for="conhecimentoSneakers">Nível de conhecimento em sneakers (1-5):</label>
+    <input type="number" id="conhecimentoSneakers" name="conhecimentoSneakers" min="1" max="5" />
+
+    <label for="marcasPreferidas">Marcas de tênis que mais conhece:</label>
+    <input type="text" id="marcasPreferidas" name="marcasPreferidas" />
+
+    <label for="caixaExperiencia">Tem experiência com caixa?</label>
+    <select id="caixaExperiencia" name="caixaExperiencia">
+    <option value="">Selecione</option>
+    <option value="sim">Sim</option>
+    <option value="nao">Não</option>
+    </select>
+
+    <label for="atendimentoNivel">Nível de atendimento ao cliente (1-5):</label>
+    <input type="number" id="atendimentoNivel" name="atendimentoNivel" min="1" max="5" />
+
+    <label for="equipe">Trabalha bem em equipe?</label>
+    <select id="equipe" name="equipe">
+    <option value="">Selecione</option>
+    <option value="sim">Sim</option>
+    <option value="nao">Não</option>
+    </select>
+
+    <label for="inventario">Já fez inventário de estoque?</label>
+    <select id="inventario" name="inventario">
+    <option value="">Selecione</option>
+    <option value="sim">Sim</option>
+    <option value="nao">Não</option>
+    </select>
+
+    <label for="pdv">Sabe usar sistema de PDV?</label>
+    <select id="pdv" name="pdv">
+    <option value="">Selecione</option>
+    <option value="sim">Sim</option>
+    <option value="nao">Não</option>
+    </select>
+
+    <label for="controle">Conhece controle de entrada/saída?</label>
+    <select id="controle" name="controle">
+    <option value="">Selecione</option>
+    <option value="sim">Sim</option>
+    <option value="nao">Não</option>
+    </select>
+
+    <label for="peso">Consegue levantar caixas pesadas?</label>
+    <select id="peso" name="peso">
+    <option value="">Selecione</option>
+    <option value="sim">Sim</option>
+    <option value="nao">Não</option>
+    </select>
+
+    <label for="vendasSociais">Usa redes sociais para vender?</label>
+    <select id="vendasSociais" name="vendasSociais">
+    <option value="">Selecione</option>
+    <option value="sim">Sim</option>
+    <option value="nao">Não</option>
+    </select>
+
+    <label for="organizacao">Nível de organização (1-5):</label>
+    <input type="number" id="organizacao" name="organizacao" min="1" max="5" />
+
+    <label for="metas">Já trabalhou com metas de vendas?</label>
+    <select id="metas" name="metas">
+    <option value="">Selecione</option>
+    <option value="sim">Sim</option>
+    <option value="nao">Não</option>
+    </select>
+
+    <label for="embalagem">Sabe embalar e despachar produtos?</label>
+    <select id="embalagem" name="embalagem">
+    <option value="">Selecione</option>
+    <option value="sim">Sim</option>
+    <option value="nao">Não</option>
+    </select>
+
+    <label for="marketplaces">Conhece marketplaces (Shopee, OLX)?</label>
+    <select id="marketplaces" name="marketplaces">
+    <option value="">Selecione</option>
+    <option value="sim">Sim</option>
+    <option value="nao">Não</option>
+    </select>
+
+    <label for="fds">Pode trabalhar aos finais de semana?</label>
+    <select id="fds" name="fds">
+    <option value="">Selecione</option>
+    <option value="sim">Sim</option>
+    <option value="nao">Não</option>
+    </select>
+
+    <label for="cnh">Possui CNH?</label>
+    <select id="cnh" name="cnh">
+    <option value="">Selecione</option>
+    <option value="sim">Sim</option>
+    <option value="nao">Não</option>
+    </select>
+
+    <label for="obs">Observações adicionais:</label>
+    <textarea id="obs" name="obs" rows="4"></textarea>
+
+    <button type="button" onclick="validarFormulario()">Enviar</button>
+    </form>
+    </body>
+    </html>
