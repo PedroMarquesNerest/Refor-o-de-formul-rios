@@ -91,6 +91,10 @@ function validarFormulario() {
         alert('Informe seu nível de atendimento ao cliente (1 a 5).');
         return;
     }
+    if (isNaN(disponibilidade) || disponibilidade < 1 || disponibilidade > 5) {
+        alert('Informe sua disponibilidade com o horário.');
+        return;
+    }
     if (!equipe) {
         alert('Informe se trabalha bem em equipe.');
         return;
